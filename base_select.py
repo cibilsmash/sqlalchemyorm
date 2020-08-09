@@ -14,9 +14,9 @@ for c in q:
 
 
 
-k = session.query(Dep_emp)
+w = session.query(Dep_emp)
 
-for t in k:
+for t in w:
 
     print(t.employee.last_name, t.department.dep_name)
 
