@@ -120,14 +120,24 @@ class Title(Base):
 
 
 
+def seed():
 
-Base.metadata.create_all(engine)
+    print("Enter 1 to create tables: ")
 
+    print("Enter 2 to delete tables: ")
 
+    num = int(input("Choose your option: "))
 
+    if num == 1:
+        Base.metadata.create_all(engine)
 
+    elif num == 2:
+        Base.metadata.drop_all(engine)
 
+    else:
+        print("Enter the number between this options")
 
+seed()
 
 
 
