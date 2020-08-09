@@ -1,3 +1,4 @@
+
 from base import  Base, Session, Employees, Departments, Dep_emp, Dep_man, Salaries, Titles
 
 
@@ -14,11 +15,11 @@ for c in q:
 
 
 
-w = session.query(Dep_emp)
+t = session.query(Dep_emp)
 
-for t in w:
+for w in t:
 
-    print(t.employee.last_name, t.department.dep_name)
+    print(w.employee.last_name, w.department.dep_name)
 
 
 
